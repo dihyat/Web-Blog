@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background: url(https://goo.gl/tvJ3UQ);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-decoration-color: #ddd;
+  
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navbar p{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 14px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+#footer {
+  text-align: left;
+  position: fixed;
+  left: 5px;
+  right: 10px;
+  bottom: 0;
+  width: 99%;
+  background:url(https://goo.gl/tvJ3UQ);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+html { 
+  background: url(https://goo.gl/AmFM6M) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used  to enable scrolling */
+  color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <p href="index.html">MABRUR HUSAN DIHYAT</p>
+  <a href="login.html">Login</a>
+  
+</div>
+
+<div class="main">
+  <h1>BLOG</h1>
+  
+  
+
+  
+</div>
+<div id="footer">
+        <script type="text/javascript">
+            document.write ('<p>Current time is: <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
+            if (document.getElementById) onload = function () {
+                setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+            }
+        </script>
+        </div>
+
+</body>
+</html>

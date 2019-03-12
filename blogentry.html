@@ -1,0 +1,251 @@
+
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>My first HTML5 Page</title>
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <style>
+       body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background: url(https://goo.gl/tvJ3UQ);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-decoration-color: #ddd;
+  
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navbar p{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 14px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+#footer {
+  text-align: left;
+  position: fixed;
+  left: 5px;
+  right: 10px;
+  bottom: 0;
+  width: 99%;
+  background:url(https://goo.gl/tvJ3UQ);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+html { 
+  background: url(https://goo.gl/AmFM6M) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used  to enable scrolling */
+  color: #f2f2f2;
+}
+    .button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 10px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: rgb(94, 39, 39);
+        border: none;
+        border-radius: 15px;
+  
+    }
+
+    .button:hover {background-color: #4e0f0f}
+
+    .button:active {
+        background-color: #490d0d;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: rgb(77, 15, 15);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #08300a;
+}
+#form {
+    width:600px;
+    padding-bottom: 40px;
+}
+label {
+    float: left;
+    width:150px;
+}
+input {
+    float: left;
+    width:200px;
+}
+
+textarea {
+    resize: none;
+}
+
+.buttons {
+    float:left;
+    margin-left: 10px;
+    transition:0.5s;
+}
+
+#submit {
+    margin-left: 20px;
+}
+
+.space {
+    clear: both;
+}
+
+.buttons:hover{
+    box-shadow: 1px 1px 10px #66b5ff;
+    padding-top:5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+
+
+
+    </style>
+    
+    </head>
+    
+
+    <body text="#FFFFFF">
+            <div class="navbar">
+                    <p href="index.php">MABRUR HUSAN DIHYAT</p>
+                    <a href="index.php">Home</a>
+                    
+                  </div>
+        <br>
+        <h4>Add Entry</h4>
+        <form action="blogentry.php" method="POST" align="left" id="myForm">
+                <label align="left" for="title">Title :</label>
+                <input id="titlefield" align="right" type="text"name="title" size="10" value="" />
+                <br class="space" />
+                <br class="space" />
+                <label id="p" align="left" for="body">Body :</label> 
+                <textarea id="bodyfield" align="right" name="body" rows="20" cols="50"></textarea><br class="space" />
+                <br class="space" />
+                <br class="space" />
+                <input id="submit" class="button" type="submit"value="Add" /> 
+                <input id="reset" class="button" type="button" value="Reset" onclick="erase()"/>
+           
+            
+
+        </form>
+        <script>
+                
+                function erase()
+                {
+                    var resetWindow = confirm("Are you sure you would like to clear the entry")
+                    if (resetWindow) {
+                        document.getElementById("titlefield").value="";
+                     document.getElementById("bodyfield").value="";
+                    }
+                    
+            
+                }
+
+             
+
+        </script>
+
+        <div id="footer">
+                <script type="text/javascript">
+                    document.write ('<p>Current time is: <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
+                    if (document.getElementById) onload = function () {
+                        setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+                    }
+                </script>
+        </div>
+
+        
+        
+    
+      
+       
+
+       
+           
+        
+    </body>
+
+
+
+
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>My first HTML5 Page</title>
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <style>
+        body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background: url(https://goo.gl/tvJ3UQ);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-decoration-color: #ddd;
+  
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navbar p{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 14px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+#footer {
+  text-align: left;
+  position: fixed;
+  left: 5px;
+  right: 10px;
+  bottom: 0;
+  width: 99%;
+  background:url(https://goo.gl/tvJ3UQ);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+html { 
+  background: url(https://goo.gl/AmFM6M) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used  to enable scrolling */
+  color: #f2f2f2;
+}
+    .button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 10px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: rgb(94, 39, 39);
+        border: none;
+        border-radius: 15px;
+  
+    }
+
+    .button:hover {background-color: #3e8e41}
+
+    .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    #form {
+    width:600px;
+    padding-bottom: 40px;
+}
+label {
+    float: left;
+    width:150px;
+}
+input {
+    float: left;
+    width:200px;
+}
+
+textarea {
+    resize: none;
+}
+
+.buttons {
+    float:left;
+    margin-left: 10px;
+    transition:0.5s;
+}
+
+#submit {
+    margin-left: 20px;
+}
+
+.space {
+    clear: both;
+}
+
+.buttons:hover{
+    box-shadow: 1px 1px 10px #66b5ff;
+    padding-top:5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+    
+    </style>
+    </head>
+    
+
+    <body text="#FFFFFF">
+            <div class="navbar">
+                    <p href="index.php">MABRUR HUSAN DIHYAT</p>
+                    <a href="index.php">Home</a>
+                    
+                  </div>
+        <h2>MABRUR HUSAN DIHYAT</h2>
+        <br>
+        <h4>LOGIN</h4>
+        <form action="loginInfo.php" align="left" method="post">
+                <label align="left" for="email">
+                    Username   : 
+                </label>
+                <input id = "email"align="right" type="email" name="email" size="50"/>
+
+                <br class="space"/>
+                <br class="space"/>
+
+                <label id = "p"align="left" for="password">Password  : </label>
+                <input id="password" align="right"type="password" name="password" />
+
+                <br class="space"/>
+                <br class="space"/>
+
+            <p>
+                <input type="submit" class="button" value="Login" >
+                <input type="reset" class="button" value="Reset">
+            </p>
+            
+
+            
+
+        </form>
+        <div id="footer">
+                <script type="text/javascript">
+                    document.write ('<p>Current time is: <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
+                    if (document.getElementById) onload = function () {
+                        setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+                    }
+                </script>
+        </div>
+        
+        
+    
+      
+        
+           
+        
+    </body>
+
+
+
+
+
+</html>
